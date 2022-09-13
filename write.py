@@ -31,7 +31,7 @@ def write_to_csv(results, filename):
         writer = csv.DictWriter(outfile, fieldnames=fieldnames)
         writer.writeheader()
         for result in results:
-            # Idea gotten from Knowledge
+            # Idea gotten from comments on Knowledge
             result_dict = {**result.serialize, **result.neo.serialize}
             writer.writerow(result_dict)
 
@@ -48,7 +48,7 @@ def write_to_json(results, filename):
     :param filename: A Path-like object pointing to where data should be saved.
     """
     with open(filename, 'w') as outfile:
-        # Idea gotten from Knowledge
+        # Idea gotten from comments Knowledge
         output = []
         for result in results:
             result_dict = {**result.serialize, 'neo': result.neo.serialize}

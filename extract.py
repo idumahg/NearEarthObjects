@@ -27,7 +27,8 @@ def load_neos(neo_csv_path):
     with open(neo_csv_path, 'r') as infile:
         reader = csv.DictReader(infile)
         for row in reader:
-            # Idea for separating by 'pha' gotten from posted work on Knowledge
+            # Idea for separating by 'pha' gotten from posted Github work on
+            # Knowledge
             if row["pha"] == 'Y':
                 neo = NearEarthObject(pdes=row["pdes"], name=row["name"],
                                       diameter=row["diameter"], pha=True)
