@@ -42,8 +42,6 @@ class NEODatabase:
         self._neos = neos
         self._approaches = approaches
 
-        # Was lost on how structure the __init__, got the idea from someone's
-        # Github work posted on Knowledge
         self.neos_name = {}
         self.neos_designation = {}
 

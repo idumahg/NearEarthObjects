@@ -37,8 +37,6 @@ class NearEarthObject:
 
         :param info: A dictionary of excess keyword arguments.
         """
-        # did not realize I was suppose to unpack the info argument
-        # then I saw it done in someone's github work in Knowledge.
         self.designation = info["pdes"]
 
         if info["name"] == "":
@@ -108,8 +106,6 @@ class CloseApproach:
 
         :param info: A dictionary of excess keyword arguments.
         """
-        # did not realize I was suppose to unpack the info argument
-        # then I saw it done in someone's github work in Knowledge.
         self._designation = info["des"]
 
         self.time = cd_to_datetime(info["cd"])

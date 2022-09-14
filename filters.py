@@ -158,8 +158,6 @@ def create_filters(date=None, start_date=None, end_date=None,
         f9 = DiameterFilter(operator.ge, diameter_min)
         filters.append(f9)
 
-    # Figured out how to construct hazardous from a mentor's
-    # comment on another student's work in Knowledge
     if hazardous is not None:
         f10 = HazardousFilter(operator.eq, hazardous)
         filters.append(f10)
